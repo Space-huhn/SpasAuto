@@ -17,7 +17,6 @@ document.addEventListener("DOMContentLoaded", () => {
         e.addEventListener("click", (e) => {
             i18next.changeLanguage(e?.target.dataset?.lang, () => {
                 localStorage.setItem("selectedLanguage", e.target.dataset?.lang);
-                document.getElementById("language__default").innerText = e.target.dataset?.lang;
                 updateContent();
             });
         });

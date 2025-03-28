@@ -49,6 +49,8 @@ document.addEventListener("DOMContentLoaded", () => {
     menuPaddingOnScroll();
 
 
+
+
 });
 
 let language = document.querySelector('.language');

@@ -1,0 +1,52 @@
+[
+    {
+        "id": 1,
+        "title": "BMW",
+        "rate": 4.5
+    },
+    {
+        "id": 2,
+        "title": "Audi",
+        "rate": 4.7
+    },
+    {
+        "id": 3,
+        "title": "Mercedes",
+        "rate": 4.6
+    },
+    {
+        "id": 4,
+        "title": "Tesla",
+        "rate": 4.9
+    },
+    {
+        "id": 5,
+        "title": "Toyota",
+        "rate": 4.3
+    },
+    {
+        "id": 6,
+        "title": "Honda",
+        "rate": 4.2
+    },
+    {
+        "id": 7,
+        "title": "Volkswagen",
+        "rate": 4.4
+    },
+    {
+        "id": 8,
+        "title": "Ford",
+        "rate": 4.1
+    },
+    {
+        "id": 9,
+        "title": "Chevrolet",
+        "rate": 4.0
+    },
+    {
+        "id": 10,
+        "title": "Nissan",
+        "rate": 4.3
+    }
+]

@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li,
+a {
+    text-decoration: none;
+    list-style: none;
+    font-size: inherit;
+    color: inherit;
+}
+
+body {
+    font-family: 'PT Sans';
+    position: relative;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    background: #fff;
+
+}
+
+.container {
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header-top-columns,
+.header-bottom-columns {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 24px;
+    justify-content: space-between;
+    padding: 12px 20px;
+}
+
+.work-24-7 {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.social-media ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 60px;
+}
+
+.social-media li {
+    list-style: none;
+}
+
+.call-number {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    font-weight: 700;
+}
+
+.header-bottom {
+    background: #121212;
+}
+
+header select {
+    background-color: none;
+    font-size: 24px;
+    color: "#fff" !important;
+}
+
+nav a {
+    color: #fff;
+}
+
+#language__default {
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.header-nav-list {
+    display: flex;
+    align-items: center;
+    gap: 38px;
+}
+
+.header-nav__language {
+    position: relative;
+    /* padding: 0 12px 0 0; */
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.language__default {
+    color: #fff;
+}
+
+.language__list {
+    position: absolute;
+    opacity: 0;
+    transition: all .3s ease 0s;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    background: #fff;
+    padding: 12px 8px;
+    border-radius: 8px;
+
+}
+
+.header-nav__language.active ul {
+    opacity: 1;
+}
+
+.call-button__icon {
+    display: none;
+}
+
+.language__list li {
+    border-bottom: 2px solid #56CCF2;
+}
+
+.language__list li:last-child {
+    border: none;
+}
+
+.header-nav__language {
+    user-select: none;
+}
+
+.header-nav__language svg {
+    transition: all .2s ease 0s;
+}
+
+.header-nav__language.active svg {
+    transform: rotate(180deg);
+}
+
+
+header .logo {
+    transition: all .2s ease-in 0s;
+    height: 130px;
+}
+
+header.on-scroll .logo {
+    height: 50px;
+    /* transform: scale(.4); */
+}
+
+header.on-scroll .header-bottom-columns,
+header.on-scroll .header-top-columns {
+    /* height: 95px; */
+    /* padding: 5px 20px; */
+}
+
+
+.hero-block {
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: url("/assets/images/hero.png") 0 100%/ 55% no-repeat;
+}
+
+.hero-block span {
+    display: block;
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: flex-end;
+    justify-self: flex-end;
+    max-width: 600px;
+    gap: 40px;
+}
+
+.text-content button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 330px;
+    height: 80px;
+    background-color: #4A90E2;
+    font-weight: bold;
+    font-size: 28px;
+    gap: 40px;
+    border: none;
+    border-radius: 40px;
+    color: #fff;
+}
+
+
+
+.hero-title {
+    font-weight: 700;
+    font-size: 64px;
+    text-align: right;
+    color: #4a90e2;
+}
+
+
+
+/* .header-nav__language svg {
+    position: absolute;
+    right: -5px;
+    top: 1px;
+} */
+
+/* 
+
+
+
+
+
+
+
+
+
+*/

@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "img": "/assets/icons/gas-pump.svg",
+        "title": "Livrare urgentă de combustibil la mașină"
+    },
+    {
+        "id": 2,
+        "img": "/assets/icons/wheel.svg",
+        "title": "Puncția rapidă și repararea tăieturilor"
+    },
+    {
+        "id": 3,
+        "img": "/assets/icons/battery.svg",
+        "title": "Încărcarea bateriei de automobil"
+    },
+]

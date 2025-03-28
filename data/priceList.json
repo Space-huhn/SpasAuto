@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "img": "https://picsum.photos/200/300",
+        "title": "Motociclete",
+        "start-price": 400
+    },
+    {
+        "id": 2,
+        "img": "https://picsum.photos/200/300",
+        "title": "Hatchback, Sedan, Universal, Crossover",
+        "start-price": 400
+    },
+    {
+        "id": 3,
+        "img": "https://picsum.photos/200/300",
+        "title": "SUV, Pickup",
+        "start-price": 450
+    },
+    {
+        "id": 4,
+        "img": "https://picsum.photos/200/300",
+        "title": "Minibus",
+        "start-price": 450
+    },
+    {
+        "id": 5,
+        "img": "https://picsum.photos/200/300",
+        "title": "Utilaj special",
+        "start-price": 450
+    },
+    {
+        "id": 6,
+        "img": "https://picsum.photos/200/300",
+        "title": "Cazuri particulare",
+        "start-price": 500
+    }
+]

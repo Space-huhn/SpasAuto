@@ -2,8 +2,12 @@ document.addEventListener("DOMContentLoaded", () => {
     fetch("./dictionary/translations.json")
         .then(response => response.json())
         .then(resources => {
+            let autoLang = ["ro", "ru"].includes(navigator.language.slice(0, 2))
+                ? navigator.language.slice(0, 2)
+                : null;
+
             i18next.init({
-                lng: localStorage.getItem("selectedLanguage") || navigator.language.slice(0, 2) || "ro",
+                lng: localStorage.getItem("selectedLanguage") || autoLang || "ro",
                 resources: resources
             }).then(() => updateContent());
         });
@@ -24,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function updateContent() {
         document.getElementById("languageSelector").value = i18next.language;
-        document.getElementById("language__default").innerText = localStorage.getItem("selectedLanguage") || "ro";
+        document.getElementById("language__default").innerText = localStorage.getItem("selectedLanguage") || navigator.language.slice(0, 2) || "ro";
         document.querySelectorAll("[data-i18n]").forEach(el => {
             el.textContent = i18next.t(el.getAttribute("data-i18n"));
         });

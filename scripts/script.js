@@ -48,12 +48,41 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     menuPaddingOnScroll();
 
-
-
-
+    if (window.innerWidth <= 1190.98) {
+        adaptiveMenu()
+    }
 });
 
 let language = document.querySelector('.language');
 let languageArrow = language.querySelector('svg');
 
 language.addEventListener('click', () => language.classList.toggle('active'));
+
+
+function adaptiveMenu() {
+    const header = document.querySelector("header");
+    const headerTop = document.querySelector(".header-top");
+    const headerBottom = document.querySelector(".header-bottom-columns");
+    const headerNav = document.querySelector(".header-nav");
+
+    if (window.innerWidth <= 1190.98) {
+        headerNav.append(headerTop)
+    } else if (window.innerWidth > 1190.98) {
+        header.prepend(headerTop)
+    };
+}
+
+window.addEventListener('resize', () => {
+    adaptiveMenu()
+})
+
+
+function burgerMenu() {
+    let burgerElement = document.querySelector('.header-burger');
+    let hederMenu = document.querySelector('.header-nav');
+    let bodyScrollLook = document.querySelector('body');
+    burgerElement.addEventListener('click', () => burgerElement.classList.toggle('active'));
+    burgerElement.addEventListener('click', () => hederMenu.classList.toggle('active'));
+    burgerElement.addEventListener('click', () => bodyScrollLook.classList.toggle('scroll-look'));
+}
+burgerMenu();

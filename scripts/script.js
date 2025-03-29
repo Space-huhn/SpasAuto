@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    fetch("../dictionary/translations.json")
+    fetch("./dictionary/translations.json")
         .then(response => response.json())
         .then(resources => {
             i18next.init({

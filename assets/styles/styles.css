@@ -219,7 +219,7 @@ header.on-scroll .header-top-columns {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url("/assets/images/hero.png") 0 100%/ 55% no-repeat;
+    background: url("./assets/images/hero.png") 0 100%/ 55% no-repeat;
 }
 
 .hero-block .container {
@@ -333,7 +333,7 @@ header.on-scroll .header-top-columns {
         justify-content: start;
         align-items: start;
 
-        background: url(/assets/images/hero.png) 0 100% / 75% no-repeat;
+        background: url("./assets/images/hero.png") 0 100% / 75% no-repeat;
     }
 
 
@@ -378,7 +378,7 @@ header.on-scroll .header-top-columns {
 
 @media (max-width: 767.98px) {
     .hero-block {
-        background: url(/assets/images/hero.png) 0 100% / 85% no-repeat;
+        background: url("./assets/images/hero.png") 0 100% / 85% no-repeat;
     }
 
     .hero-work-24-7 {
@@ -389,7 +389,7 @@ header.on-scroll .header-top-columns {
 
 @media (max-width: 475.98px) {
     .hero-block {
-        background: url(/assets/images/hero2.png) 50% 100% / cover no-repeat;
+        background: url("./assets/images/hero2.png") 50% 100% / cover no-repeat;
     }
 
     .text-content {

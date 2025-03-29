@@ -164,7 +164,6 @@ nav a {
     padding: 12px 8px;
     border-radius: 8px;
     margin: 5px 0 0 30px;
-
 }
 
 .header-nav__language.active ul {
@@ -217,7 +216,7 @@ header.on-scroll .header-top-columns {
     min-height: 100vh;
     width: 100vw;
     display: flex;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
     background: url("../images/hero.png") 0 100%/ 55% no-repeat;
 }
@@ -259,6 +258,7 @@ header.on-scroll .header-top-columns {
     border: none;
     border-radius: 40px;
     color: #fff;
+    margin-top: 30px;
 }
 
 
@@ -278,6 +278,11 @@ header.on-scroll .header-top-columns {
 }
 
 @media (max-width: 1190.98px) {
+
+    header .logo {
+        height: 65px;
+    }
+
     .header-nav {
         min-height: 100vh;
         min-width: 100vw;
@@ -290,6 +295,7 @@ header.on-scroll .header-top-columns {
         background: #121212;
         z-index: -1;
         transition: all .4s ease-in 0s;
+        overflow-y: auto;
     }
 
     .header-nav.active {
@@ -299,7 +305,7 @@ header.on-scroll .header-top-columns {
 
     .header-nav-list {
         flex-direction: column;
-        padding-top: 150px;
+        padding-top: 100px;
 
     }
 
@@ -330,7 +336,7 @@ header.on-scroll .header-top-columns {
     }
 
     .hero-block {
-        justify-content: start;
+        justify-content: end;
         align-items: start;
 
         background: url("../images/hero.png") 0 100% / 75% no-repeat;
@@ -394,9 +400,8 @@ header.on-scroll .header-top-columns {
     .text-content {
         align-items: center;
         justify-self: center;
-        padding: 30px;
-        margin: 150px 0 0 0;
-        gap: 5vh;
+        padding: 15px;
+        margin: 100px 0 0 0;
         min-height: 80vh;
         justify-content: space-around;
     }

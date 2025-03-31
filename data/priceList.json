@@ -1,5 +1,5 @@
-{
-    "data": [{
+[
+    {
         "id": 1,
         "img": "./assets/images/prices/01.jpg",
         "title": "Motociclete",
@@ -34,5 +34,5 @@
         "img": "./assets/images/prices/06.jpg",
         "title": "Cazuri particulare",
         "start-price": "500"
-    }]
-}
+    }
+]

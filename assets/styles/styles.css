@@ -15,6 +15,7 @@ a {
 body {
     font-family: 'PT Sans';
     position: relative;
+    scroll-behavior: smooth;
 }
 
 body.scroll-look {
@@ -197,18 +198,14 @@ nav a {
 header .logo {
     transition: all .2s ease-in 0s;
     height: 130px;
-    z-index: 100;
+}
+
+header a:has(.logo) {
+    z-index: 150;
 }
 
 header.on-scroll .logo {
     height: 50px;
-    /* transform: scale(.4); */
-}
-
-header.on-scroll .header-bottom-columns,
-header.on-scroll .header-top-columns {
-    /* height: 95px; */
-    /* padding: 5px 20px; */
 }
 
 /*------------------------------------------------*/
@@ -278,7 +275,6 @@ header.on-scroll .header-top-columns {
     margin-top: 30px;
 }
 
-
 .hero-title {
     font-weight: 700;
     font-size: 64px;
@@ -293,7 +289,6 @@ header.on-scroll .header-top-columns {
     color: #000;
     max-width: 450px;
 }
-
 
 /*---------------------------------------------------------*/
 @media (max-aspect-ratio: 16/10) {
@@ -313,10 +308,7 @@ header.on-scroll .header-top-columns {
     }
 }
 
-
 /*----------------------------------------------------*/
-
-
 .ads-line {
     background: url("../images/ads-line-bg.jpg");
     height: 80px;
@@ -327,7 +319,6 @@ header.on-scroll .header-top-columns {
     display: flex;
     align-items: center;
     overflow: hidden;
-
 }
 
 .ads-line .swiper-slide {
@@ -348,100 +339,115 @@ header.on-scroll .header-top-columns {
 
 /*-----------------------------------------------*/
 
-/* Price list section */
-.price-list {
-    /*display: grid;*/
-    /*grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));*/
-    /*gap: 20px;*/
-    /*justify-content: center;*/
-    padding: 50px 10%;
-}
 
-/* Additional services */
-.additional-services {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 50px 10%;
-}
-.additional-services-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    text-align: center;
-}
-
-/* About Us Section */
-.about-us {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 50px 10%;
-    background-color: #e6f0ff;
-}
-.about-us-left {
-    flex: 1;
-    padding-right: 50px;
-}
-.about-us img {
-    max-width: 50%;
-}
-.contact-us-btn a {
-    text-decoration: none;
-    background: #007bff;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    display: inline-block;
-}
-
-/* Why Choose Us Section */
-.choose-us {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    padding: 50px 10%;
-}
-.choose-us-card {
-    text-align: center;
-}
-
-/* Contact Section */
 .contact-us {
     text-align: center;
     padding: 50px 10%;
 }
+
 .contact-us-contacts {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 40px;
+    flex-wrap: wrap;
+
 }
+
 .social-media ul {
     display: flex;
     list-style: none;
     justify-content: center;
+}
+
+/* ---------------------------------------- */
+
+.contact-us-contacts {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 125px;
+}
+
+.contact-us-article {
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    color: #000;
+    margin: 30px 0 80px 0;
+
+}
+
+.contact-us-contact {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.contact-us-contact img {
+    width: 92px;
+    height: 92px;
+}
+
+.contact-us-contact span {
+    font-weight: 700;
+    font-size: 24px;
+    color: #000;
+}
+
+
+/* ---------------------------------------- */
+
+footer {
+    background: #121212;
+
+}
+
+.footer-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 20px;
+}
+
+.footer-partners-title {
+    text-align: center;
+    color: #fff;
+    margin-top: 15px;
+}
+
+.footer-partners-list {
+    margin: 30px 0 0 0;
+    padding-bottom: 50px;
+    display: flex;
+    gap: 80px;
+    align-items: center;
+    color: #fff;
+    justify-content: center;
+}
+
+.footer-partners {
+    background: #171717;
+}
+
+.copyrights {
+    font-weight: 400;
+    font-size: 14px;
+    color: #fff;
+}
+
+footer ul {
+    display: flex;
     gap: 20px;
 }
 
-/* Footer */
-footer {
-    background: black;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-.footer-navigation ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    padding: 0;
+footer a {
+    font-weight: 400;
+    font-size: 14px;
+    color: #fff;
 }
 
-
-
+/* ------------------------------------------------- */
 
 
 

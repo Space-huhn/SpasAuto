@@ -115,8 +115,8 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     fetchData("./data/pricesList.json", generatePriceCards);
-    // fetchData("./data/additionalServices.json", generateServiceCards);
-    // fetchData("./data/chooseUs.json", generateChooseUsCards);
+    fetchData("./data/additionalServices.json", generateServiceCards);
+    fetchData("./data/chooseUs.json", generateChooseUsCards);
 });
 
 

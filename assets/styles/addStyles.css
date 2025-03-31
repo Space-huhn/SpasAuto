@@ -1,3 +1,6 @@
+.hero-block.mobile {
+}
+
 .cards-rows {
     display: flex;
     flex-direction: row;

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Бегущая строка с наклонными линиями</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+    }
+
+    .container {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      background-color: #000;
+      height: 60px;
+    }
+
+    .marquee-wrapper {
+      position: absolute;
+      display: flex;
+      animation: marquee 10s linear infinite;
+    }
+
+    .marquee {
+      white-space: nowrap;
+      color: #fff;
+      font-size: 24px;
+      line-height: 60px;
+      padding-right: 50px; /* Чтобы текст не накладывался на конец */
+      z-index: 2;
+      text-shadow: 2px 6px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    .line {
+      position: absolute;
+      background-color: black; /* Чёрные линии */
+      width: 100%;
+      height: 3px;
+      transform: rotate(-45deg);
+      top: 50%;
+      left: 0;
+      z-index: -1;
+    }
+
+    /* .yellow-stripe {
+        position: absolute;
+        background-color: yellow;
+        width: 100%;
+        transform: rotate(61deg);
+        height: 60px;
+        top: 50%;
+        left: 0;
+        z-index: 0;
+    } */
+
+    .yellow-stripe:nth-child(1) {
+        position: absolute;
+        background-color: yellow;
+        width: 100%;
+        transform: rotate(61deg);
+        height: 60px;
+        top: 50%;
+        left: -100%;
+        z-index: 0;
+    }
+    .yellow-stripe:nth-child(2) {
+        position: absolute;
+        background-color: yellow;
+        width: 100%;
+        transform: rotate(61deg);
+        height: 60px;
+        top: 50%;
+        left: -80%;
+        z-index: 0;
+    }
+    .yellow-stripe:nth-child(3) {
+        position: absolute;
+        background-color: yellow;
+        width: 100%;
+        transform: rotate(61deg);
+        height: 60px;
+        top: 50%;
+        left: -60%;
+        z-index: 0;
+    }
+    .yellow-stripe:nth-child(4) {
+        position: absolute;
+        background-color: yellow;
+        width: 100%;
+        transform: rotate(61deg);
+        height: 60px;
+        top: 50%;
+        left: -40%;
+        z-index: 0;
+    }
+    .yellow-stripe:nth-child(5) {
+        position: absolute;
+        background-color: yellow;
+        width: 100%;
+        transform: rotate(61deg);
+        height: 60px;
+        top: 50%;
+        left: -20%;
+        z-index: 0;
+    }
+    .yellow-stripe:nth-child(6) {
+        position: absolute;
+        background-color: yellow;
+        width: 100%;
+        transform: rotate(61deg);
+        height: 60px;
+        top: 50%;
+        left: 0;
+        z-index: 0;
+    }
+    .yellow-stripe:nth-child(7) {
+        position: absolute;
+        background-color: yellow;
+        width: 100%;
+        transform: rotate(61deg);
+        height: 60px;
+        top: 50%;
+        left: 20%;
+        z-index: 0;
+    }
+    .yellow-stripe:nth-child(8) {
+        position: absolute;
+        background-color: yellow;
+        width: 100%;
+        transform: rotate(61deg);
+        height: 60px;
+        top: 50%;
+        left: 40%;
+        z-index: 0;
+    }
+    .yellow-stripe:nth-child(9) {
+        position: absolute;
+        background-color: yellow;
+        width: 100%;
+        transform: rotate(61deg);
+        height: 60px;
+        top: 50%;
+        left: 60%;
+        z-index: 0;
+    }
+    .yellow-stripe:nth-child(10) {
+        position: absolute;
+        background-color: yellow;
+        width: 100%;
+        transform: rotate(61deg);
+        height: 60px;
+        top: 50%;
+        left: 80%;
+        z-index: 0;
+    }
+    .yellow-stripe:nth-child(11) {
+        position: absolute;
+        background-color: yellow;
+        width: 100%;
+        transform: rotate(61deg);
+        height: 60px;
+        top: 50%;
+        left: 100%;
+        z-index: 0;
+    }
+    
+
+    @keyframes marquee {
+      0% {
+        left: 100%;
+      }
+      100% {
+        left: -100%;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="marquee-wrapper">
+      <!-- <div class="line"></div> Наклонные чёрные линии -->
+      <div class="yellow-stripe"></div>
+      <div class="yellow-stripe"></div>
+      <div class="yellow-stripe"></div>
+      <div class="yellow-stripe"></div>
+      <div class="yellow-stripe"></div>
+      <div class="yellow-stripe"></div>
+      <div class="yellow-stripe"></div>
+      <div class="yellow-stripe"></div>
+      <div class="yellow-stripe"></div>
+      <div class="yellow-stripe"></div>
+      <div class="yellow-stripe"></div>
+      <span class="marquee">
+        Это пример бегущей строки с наклонными линиями! Приятного просмотра!
+      </span>
+    </div>
+  </div>
+
+</body>
+</html>

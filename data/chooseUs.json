@@ -1,26 +1,34 @@
-[
-    {
-        "id": 1,
-        "title": "Asistență 24/7, mereu la dispoziție!"
-    },
-    {
-        "id": 2,
-        "title": "Asistență 24/7, mereu la dispoziție!"
-    },
-    {
-        "id": 3,
-        "title": "Prețuri corecte, fără surprize!"
-    },
-    {
-        "id": 4,
-        "title": "Echipă profesionistă, gata de acțiune!"
-    },
-    {
-        "id": 5,
-        "title": "Some text to test carousel!"
-    },
-    {
-        "id": 6,
-        "title": "Some text to test carousel!"
-    }
-]
+{
+    "chooseUs": [
+        {
+            "id": 1,
+            "title_ro": "Asistență 24/7, mereu la dispoziție!",
+            "title_ru": "Поддержка 24/7, всегда на связи!"
+        },
+        {
+            "id": 2,
+            "title_ro": "Asistență 24/7, mereu la dispoziție!",
+            "title_ru": "Поддержка 24/7, всегда на связи!"
+        },
+        {
+            "id": 3,
+            "title_ro": "Prețuri corecte, fără surprize!",
+            "title_ru": "Честные цены, без сюрпризов!"
+        },
+        {
+            "id": 4,
+            "title_ro": "Echipă profesionistă, gata de acțiune!",
+            "title_ru": "Профессиональная команда, готовая к действию!"
+        },
+        {
+            "id": 5,
+            "title_ro": "Some text to test carousel!",
+            "title_ru": "Текст для тестирования карусели!"
+        },
+        {
+            "id": 6,
+            "title_ro": "Some text to test carousel!",
+            "title_ru": "Текст для тестирования карусели!"
+        }
+    ]
+}

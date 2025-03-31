@@ -1,0 +1,50 @@
+.cards-rows {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+.price-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.price-card {
+    width: 370px;
+    height: 268px;
+}
+
+.price-card img {
+    width: 370px;
+    height: auto;
+    border-radius: 9px;
+    z-index: 0;
+}
+.price-card .price-card-info {
+    position: relative;
+    background: #fff;
+    height: 110px;
+    width: 300px;
+    border-radius: 9px;
+    z-index: 1;
+}
+
+.price-card p.card-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #000;
+    margin-top: 10px;
+}
+
+.price-card .card-price {
+    color: #666666;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0;
+}

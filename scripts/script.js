@@ -160,7 +160,6 @@ function generatePriceCards(prices) {
         // priceWrapper.className.add("card-price-wrapper")
         priceWrapper.classList.add("card-price-wrapper");
 
-
         // Создаём элементы для цены
         const priceStartText = document.createElement("span");
         const priceLeiText = document.createElement("span");
@@ -170,34 +169,29 @@ function generatePriceCards(prices) {
         priceStartText.setAttribute("data-i18n", "start-prices");
         priceStartText.textContent = "de la ";
 
-
         priceLeiText.classList.add("card-price");
         priceLeiText.setAttribute("data-i18n", "lei");
         priceLeiText.textContent = " lei";
 
-
         priceText.classList.add("card-price");
         priceText.textContent = ` ${item.start_price} `;
-
-        // const priceLei = document.createElement("span");
-        // priceLei.classList.add("card-price");
-        // priceLei.setAttribute("data-i18n", "lei");
-        // priceLei.textContent = " lei";
 
         // Добавляем элементы в блок с ценой
         priceWrapper.appendChild(priceStartText);
         priceWrapper.appendChild(priceText);
         priceWrapper.appendChild(priceLeiText);
 
-        // priceWrapper.appendChild(priceLei);
-
         // Создаём кнопку
         const orderButton = document.createElement("button");
         orderButton.classList.add("btn");
-        orderButton.setAttribute("data-i18n", "order-now-btn");
         orderButton.type = "button";
-        orderButton.textContent = "Comandă acum";
 
+        const link = document.createElement("a");
+        link.setAttribute("data-i18n", "order-now-btn");
+        link.textContent = "Comandă acum";
+        link.setAttribute("href", "tel:+37379412112")
+
+        orderButton.appendChild(link)
         // Добавляем заголовок, цену и кнопку в контент карточки
         cardContent.appendChild(cardTitle);
         cardContent.appendChild(priceWrapper);

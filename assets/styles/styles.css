@@ -392,7 +392,7 @@ header.on-scroll .logo {
 .price-card .price-card-info {
     position: absolute;
     background: #fff;
-    /* height: 120px; */
+    height: 130px;
     width: 280px;
     border-radius: 9px;
     bottom: -45px;
@@ -400,8 +400,11 @@ header.on-scroll .logo {
     z-index: 1;
     box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.1);
     background: #fff;
-    padding: 20px;
-    height: 100%;
+    padding: 15px 20px;
+    /* height: 100%; */
+    display: flex;
+    flex-direction: column;
+    align-items: start;
 }
 
 .price-card p.card-title {
@@ -417,7 +420,22 @@ header.on-scroll .logo {
     line-height: 24px;
     letter-spacing: 0;
     display: flex;
-    flex: 1 1 auto;
+    flex: 1 1 100%;
+    gap: 4px;
+}
+
+.btn {
+    border-radius: 8px;
+    background: #4a90e2;
+    padding: 5px 25px;
+    border: none;
+    display: inline-block;
+}
+
+.btn a {
+    font-weight: 400;
+    font-size: 12px;
+    color: #fff;
 }
 
 /* ---------------------------------------- */

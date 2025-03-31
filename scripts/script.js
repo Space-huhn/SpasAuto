@@ -2,6 +2,12 @@ import additionalServices from "../data/additionalServices.json" with { type: "j
 import chooseUs from "../data/chooseUs.json" with { type: "json" };
 import priceList from "../data/priceList.json" with { type: "json" };
 
+let autoLang = ["ro", "ru"].includes(navigator.language.slice(0, 2))
+    ? navigator.language.slice(0, 2)
+    : null;
+
+let curentLang = localStorage.getItem("selectedLanguage") || autoLang || "ro";
+
 document.addEventListener("DOMContentLoaded", () => {
     fetch("./dictionary/translations.json")
         .then((response) => response.json())
@@ -12,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             i18next
                 .init({
-                    lng: localStorage.getItem("selectedLanguage") || autoLang || "ro",
+                    lng: curentLang,
                     resources: resources,
                 })
                 .then(() => updateContent());
@@ -25,12 +31,15 @@ document.addEventListener("DOMContentLoaded", () => {
         e.addEventListener("click", (e) => {
             i18next.changeLanguage(e?.target.dataset?.lang, () => {
                 localStorage.setItem("selectedLanguage", e.target.dataset?.lang);
+                curentLang = e.target.dataset?.lang;
                 updateContent();
             });
         });
     });
 
     function updateContent() {
+        generateElementsFromData();
+
         document.getElementById("languageSelector").value = i18next.language;
         document.getElementById("language__default").innerText =
             localStorage.getItem("selectedLanguage") || navigator.language.slice(0, 2) || "ro";
@@ -38,42 +47,45 @@ document.addEventListener("DOMContentLoaded", () => {
             el.textContent = i18next.t(el.getAttribute("data-i18n"));
         });
     }
-
-    function menuPaddingOnScroll() {
-        const position = window.pageYOffset;
-        if (position >= 100) {
-            document.querySelector("header").classList.add("on-scroll");
-        }
-
-        window.addEventListener("scroll", scrollFromTop);
-        function scrollFromTop() {
-            let scrollLenth = window.pageYOffset;
-            if (scrollLenth >= 100) {
-                document.querySelector("header").classList.add("on-scroll");
-            } else {
-                document.querySelector("header").classList.remove("on-scroll");
-            }
-        }
-    }
-    menuPaddingOnScroll();
-
-    if (window.innerWidth <= 1190.98) {
-        adaptiveMenu();
-    }
-
-    const swiper = new Swiper(".ads-line", {
-        loop: true, // Infinite loop
-        autoplay: {
-            delay: 1, // 3 seconds per slide
-            disableOnInteraction: false, // Keeps autoplay after interaction
-        },
-        speed: 6000,
-        slidesPerView: "auto", // Number of visible slides
-        spaceBetween: 1, // Space between slides
-        freeMode: true, // Allows continuous movement
-        freeModeMomentum: false,
-    });
 });
+
+
+
+function menuPaddingOnScroll() {
+    const position = window.pageYOffset;
+    if (position >= 100) {
+        document.querySelector("header").classList.add("on-scroll");
+    }
+
+    window.addEventListener("scroll", scrollFromTop);
+    function scrollFromTop() {
+        let scrollLenth = window.pageYOffset;
+        if (scrollLenth >= 100) {
+            document.querySelector("header").classList.add("on-scroll");
+        } else {
+            document.querySelector("header").classList.remove("on-scroll");
+        }
+    }
+}
+menuPaddingOnScroll();
+
+if (window.innerWidth <= 1190.98) {
+    adaptiveMenu();
+}
+
+const swiper = new Swiper(".ads-line", {
+    loop: true, // Infinite loop
+    autoplay: {
+        delay: 1, // 3 seconds per slide
+        disableOnInteraction: false, // Keeps autoplay after interaction
+    },
+    speed: 6000,
+    slidesPerView: "auto", // Number of visible slides
+    spaceBetween: 1, // Space between slides
+    freeMode: true, // Allows continuous movement
+    freeModeMomentum: false,
+});
+
 
 let language = document.querySelector(".language");
 let languageArrow = language.querySelector("svg");
@@ -107,36 +119,22 @@ function burgerMenu() {
 }
 burgerMenu();
 
-document.addEventListener("DOMContentLoaded", () => {
-    // const fetchData = (url, callback) => {
-    //     fetch(url)
-    //         .then((response) => {
-    //             if (!response.ok) {
-    //                 throw new Error(`HTTP error! status: ${response.status}`);
-    //             }
-    //             return response.json(); // Возвращаем результат метода response.json()
-    //         })
-    //         .then((data) => {
-    //             console.log(data); // Логируем данные
-    //             callback(data); // Передаем данные в callback
-    //         })
-    //         .catch((error) => {
-    //             console.error(`Error loading JSON from ${url}:`, error);
-    //         });
-    // };
-
-    // fetchData("./data/priceList.json", generatePriceCards);
+function generateElementsFromData() {
     generatePriceCards(priceList);
     generateServiceCards(additionalServices);
     generateChooseUsCards(chooseUs);
-    // fetchData("./data/additionalServices.json", generateServiceCards);
-    // fetchData("./data/chooseUs.json", generateChooseUsCards);
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+    generateElementsFromData()
 });
 
 function generatePriceCards(prices) {
     const priceList = document.querySelector(".cards-rows");
 
-    prices.priceList.forEach((item) => {
+    priceList.innerHTML = "";
+
+    prices.priceList[curentLang].forEach((item) => {
         // Создаём основной контейнер карточки
         const card = document.createElement("div");
         card.classList.add("price-card");
@@ -153,7 +151,7 @@ function generatePriceCards(prices) {
         // Создаём заголовок карточки
         const cardTitle = document.createElement("p");
         cardTitle.classList.add("card-title");
-        cardTitle.textContent = item.title_ro;
+        cardTitle.textContent = item.title;
 
         // Создаём блок с ценой
         const priceWrapper = document.createElement("div");
@@ -208,9 +206,11 @@ function generatePriceCards(prices) {
 
 
 function generateServiceCards(services) {
-    const serviceList = document.querySelector(".additional-services");
+    const serviceList = document.querySelector(".additional-services-row");
 
-    services.additionalServices.forEach((service) => {
+    serviceList.innerHTML = "";
+
+    services.additionalServices[curentLang].forEach((service) => {
         // Создаём контейнер карточки
         const card = document.createElement("div");
         card.classList.add("additional-services-card");
@@ -218,11 +218,11 @@ function generateServiceCards(services) {
         // Создаём изображение для карточки
         const img = document.createElement("img");
         img.src = service.icon;
-        img.alt = service.title_ro;
+        img.alt = service.title;
 
         // Создаём элемент для заголовка
         const title = document.createElement("span");
-        title.textContent = service.title_ro;
+        title.textContent = service.title;
 
         // Добавляем изображение и заголовок в карточку
         card.appendChild(img);
@@ -236,7 +236,9 @@ function generateServiceCards(services) {
 function generateChooseUsCards(whyChooseUs) {
     const chooseUsList = document.querySelector(".choose-us");
 
-    whyChooseUs.chooseUs.forEach((item) => {
+    chooseUsList.innerHTML = "";
+
+    whyChooseUs.chooseUs[curentLang].forEach((item) => {
         // Создаём контейнер карточки
         const card = document.createElement("div");
         card.classList.add("choose-us-card");
@@ -244,7 +246,7 @@ function generateChooseUsCards(whyChooseUs) {
         // Создаём элемент для заголовка
         const title = document.createElement("div");
         title.classList.add("choose-us-title");
-        title.textContent = item.title_ro;
+        title.textContent = item.title;
 
         // Добавляем заголовок в карточку
         card.appendChild(title);

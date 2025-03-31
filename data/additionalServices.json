@@ -1,22 +1,38 @@
 {
-    "additionalServices": [
-        {
-            "id": 1,
-            "icon": "../assets/icons/gas-pump.svg",
-            "title_ro": "Livrare urgentă de combustibil la mașină",
-            "title_ru": "Экспресс-доставка топлива на автомобиль"
-        },
-        {
-            "id": 2,
-            "icon": "../assets/icons/wheel.svg",
-            "title_ro": "Puncția rapidă și repararea tăieturilor",
-            "title_ru": "Быстрая прокачка и ремонт порезов"
-        },
-        {
-            "id": 3,
-            "icon": "../assets/icons/battery.svg",
-            "title_ro": "Încărcarea bateriei de automobil",
-            "title_ru": "Зарядка автомобильного аккумулятора"
-        }
-    ]
+    "additionalServices": {
+        "ro": [
+            {
+                "id": 1,
+                "icon": "./assets/icons/gas-pump.svg",
+                "title": "Livrare urgentă de combustibil la mașină"
+            },
+            {
+                "id": 2,
+                "icon": "./assets/icons/wheel.svg",
+                "title": "Puncția rapidă și repararea tăieturilor"
+            },
+            {
+                "id": 3,
+                "icon": "./assets/icons/battery.svg",
+                "title": "Încărcarea bateriei de automobil"
+            }
+        ],
+        "ru": [
+            {
+                "id": 1,
+                "icon": "./assets/icons/gas-pump.svg",
+                "title": "Экспресс-доставка топлива на автомобиль"
+            },
+            {
+                "id": 2,
+                "icon": "./assets/icons/wheel.svg",
+                "title": "Быстрая прокачка и ремонт порезов"
+            },
+            {
+                "id": 3,
+                "icon": "./assets/icons/battery.svg",
+                "title": "Зарядка автомобильного аккумулятора"
+            }
+        ]
+    }
 }

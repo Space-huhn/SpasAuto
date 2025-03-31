@@ -1,7 +1,3 @@
-// const priceList = [];
-// const additionalServices = [];
-// const whyChooseUs = [];
-
 import additionalServices from "../data/additionalServices.json" with { type: "json" };
 import chooseUs from "../data/chooseUs.json" with { type: "json" };
 import priceList from "../data/priceList.json" with { type: "json" };
@@ -161,12 +157,27 @@ function generatePriceCards(prices) {
 
         // Создаём блок с ценой
         const priceWrapper = document.createElement("div");
+        // priceWrapper.className.add("card-price-wrapper")
+        priceWrapper.classList.add("card-price-wrapper");
+
 
         // Создаём элементы для цены
         const priceStartText = document.createElement("span");
-        priceStartText.classList.add("card-price");
-        // priceStartText.setAttribute("data-i18n", "start-prices");
-        priceStartText.textContent = `de la ${item.start_price} lei`;
+        const priceLeiText = document.createElement("span");
+        const priceText = document.createElement("span");
+
+        priceStartText.classList.add("card-price-start");
+        priceStartText.setAttribute("data-i18n", "start-prices");
+        priceStartText.textContent = "de la ";
+
+
+        priceLeiText.classList.add("card-price");
+        priceLeiText.setAttribute("data-i18n", "lei");
+        priceLeiText.textContent = " lei";
+
+
+        priceText.classList.add("card-price");
+        priceText.textContent = ` ${item.start_price} `;
 
         // const priceLei = document.createElement("span");
         // priceLei.classList.add("card-price");
@@ -175,6 +186,9 @@ function generatePriceCards(prices) {
 
         // Добавляем элементы в блок с ценой
         priceWrapper.appendChild(priceStartText);
+        priceWrapper.appendChild(priceText);
+        priceWrapper.appendChild(priceLeiText);
+
         // priceWrapper.appendChild(priceLei);
 
         // Создаём кнопку

@@ -298,7 +298,7 @@ const chooseUsSwiper = new Swiper(".choose-us", {
     // },
     slidesPerView: 4, // Show 1 slide at a time
     spaceBetween: 70, // Space between slides
-    autoHeight: true,
+    // autoHeight: true,
     // navigation: {
     //     nextEl: null,
     //     prevEl: null,

@@ -86,6 +86,19 @@ const swiper = new Swiper(".ads-line", {
     freeModeMomentum: false,
 });
 
+// const swiperPartners = new Swiper(".footer-partners-list", {
+//     loop: true, // Infinite loop
+//     autoplay: {
+//         delay: 1, // 3 seconds per slide
+//         disableOnInteraction: false, // Keeps autoplay after interaction
+//     },
+//     speed: 300,
+//     slidesPerView: 3, // Number of visible slides
+//     spaceBetween: 1, // Space between slides
+//     freeMode: true, // Allows continuous movement
+//     freeModeMomentum: false,
+// });
+
 
 let language = document.querySelector(".language");
 let languageArrow = language.querySelector("svg");
@@ -113,11 +126,29 @@ function burgerMenu() {
     let burgerElement = document.querySelector(".header-burger");
     let headerMenu = document.querySelector(".header-nav");
     let bodyScrollLook = document.querySelector("body");
-    burgerElement.addEventListener("click", () => burgerElement.classList.toggle("active"));
-    burgerElement.addEventListener("click", () => headerMenu.classList.toggle("active"));
-    burgerElement.addEventListener("click", () => bodyScrollLook.classList.toggle("scroll-look"));
+    burgerElement.addEventListener("click", () => {
+        burgerElement.classList.toggle("active")
+        headerMenu.classList.toggle("active")
+        bodyScrollLook.classList.toggle("scroll-look")
+    });
+
 }
 burgerMenu();
+
+document.querySelectorAll(".header-nav-link").forEach(item => {
+    let burgerElement = document.querySelector(".header-burger");
+    let headerMenu = document.querySelector(".header-nav");
+    let bodyScrollLook = document.querySelector("body");
+
+    if (burgerElement.classList.contains("active")) {
+        item.addEventListener("click", () => {
+            headerMenu.classList.toggle("active")
+            burgerElement.classList.toggle("active")
+            bodyScrollLook.classList.toggle("scroll-look")
+        })
+    }
+
+})
 
 function generateElementsFromData() {
     generatePriceCards(priceList);
@@ -234,25 +265,49 @@ function generateServiceCards(services) {
 }
 
 function generateChooseUsCards(whyChooseUs) {
-    const chooseUsList = document.querySelector(".choose-us");
+    const chooseUsList = document.querySelector(".swiper.choose-us .swiper-wrapper");
 
     chooseUsList.innerHTML = "";
 
     whyChooseUs.chooseUs[curentLang].forEach((item) => {
         // Создаём контейнер карточки
-        const card = document.createElement("div");
-        card.classList.add("choose-us-card");
+        // const card = document.createElement("div");
+        // card.classList.add("choose-us-card");
+        const swiperSlide = document.createElement("div");
+        swiperSlide.classList.add('swiper-slide')
 
         // Создаём элемент для заголовка
+        const number = document.createElement("div");
+        number.classList.add("params");
+        number.textContent = item.id;
+
         const title = document.createElement("div");
         title.classList.add("choose-us-title");
         title.textContent = item.title;
 
         // Добавляем заголовок в карточку
-        card.appendChild(title);
+        swiperSlide.appendChild(number);
+        swiperSlide.appendChild(title);
+
 
         // Добавляем карточку в список
-        chooseUsList.appendChild(card);
+        chooseUsList.appendChild(swiperSlide);
     });
+    // chooseUsList.appendChild(swiperSlide);
 }
 
+
+const chooseUsSwiper = new Swiper(".choose-us", {
+    loop: true, // Infinite loop
+    autoplay: {
+        delay: 3000, // Auto-slide every 3 seconds
+        disableOnInteraction: false,
+    },
+    slidesPerView: 4, // Show 1 slide at a time
+    spaceBetween: 10, // Space between slides
+    navigation: {
+        nextEl: null,
+        prevEl: null,
+    },
+
+});

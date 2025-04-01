@@ -7,7 +7,7 @@
             },
             {
                 "id": 2,
-                "title": "Asistență 24/7, mereu la dispoziție!"
+                "title": "Servicii rapide, fără întârziere!"
             },
             {
                 "id": 3,
@@ -19,11 +19,11 @@
             },
             {
                 "id": 5,
-                "title": "Some text to test carousel!"
+                "title": "Feedback pozitiv de la clienți!"
             },
             {
                 "id": 6,
-                "title": "Some text to test carousel!"
+                "title": "Servicii personalizate pentru nevoile tale!"
             }
         ],
         "ru": [
@@ -33,7 +33,7 @@
             },
             {
                 "id": 2,
-                "title": "Поддержка 24/7, всегда на связи!"
+                "title": "Быстрые услуги, без задержек!"
             },
             {
                 "id": 3,
@@ -45,11 +45,11 @@
             },
             {
                 "id": 5,
-                "title": "Текст для тестирования карусели!"
+                "title": "Положительные отзывы от клиентов!"
             },
             {
                 "id": 6,
-                "title": "Текст для тестирования карусели!"
+                "title": "Персонализированные услуги для ваших нужд!"
             }
         ]
     }

@@ -18,28 +18,43 @@
             "contact-us-title": "Contacte",
             "contact-us-article": "Pentru oricare din serviciile noastre puteți telefona la numarul de telefon de mai jos sau tasta butonul „Sună acum”. Pentru informații sau întrebari vă invităm să vă alăturați nouă în rețele de socializare și mesengeruri. Pentru recomandări sau reclamații vă adresați la numarul de telefon sau poșta electronică de mai jos:",
             "start-prices": "de la",
-            "aditional-services-title": "Servicii suplimentare"
+            "aditional-services-title": "Servicii suplimentare",
+            "choose-us-title": "De ce să ne alegi pe noi?",
+            "about-us-title": "Cine suntem noi?",
+            "contact-us": "Contactează-ne",
+            "about-us-article-1": "Cu o experiență de peste 7 ani în domeniul tractărilor auto și evacuărilor, suntem alegerea de încredere pentru șoferii din Republica Moldova. Operăm non-stop, oferind servicii rapide și sigure atât pe întreg teritoriul tării noastre cît și în Iași",
+            "about-us-article-2": "Cu Indiferent dacă ai nevoie de tractarea unei mașini avariate, transport auto specializat sau asistență rutieră de urgență, echipa noastră de profesioniști este mereu pregătită să intervină.",
+            "about-us-article-3": "Contactează-ne pentru o soluție rapidă și eficientă, oriunde te-ai afla!",
+            "choose-us-subtile": "Avem tot ce îți trebuie pentru a te simți în siguranță pe drum. Servicii rapide, prețuri transparente și o echipă dedicată care îți va răspunde la orice întrebare!"
         }
     },
     "ru": {
         "translation": {
-            "nonstop": "Мы работаем круглосуточно",
+            "nonstop": "Работаем без перерывов",
             "menu-home": "Главная",
             "menu-prices": "Цены",
             "menu-about": "О нас",
             "menu-contacts": "Контакты",
-            "hero-title": "Эвакуатор по всему Бельцу",
-            "hero-article-mobile": "Мы поможем вам вернуться на дорогу: быстро, безопасно и с комфортом!",
-            "hero-article": "Буксировка автомобилей, мотоциклов и спецтехники по доступным ценам. Эвакуатор в Бельцах и Яссах.",
+            "hero-title": "Эвакуатор по всему Бэлць",
+            "hero-article-mobile": "Мы поможем вам вернуться на дорогу: быстро, безопасно и комфортно!",
+            "hero-article": "Эвакуация автомобилей, мотоциклов и спецтехники по доступным ценам. Эвакуатор в Бэлць и Яссах.",
             "call-now": "Позвонить сейчас",
-            "ads-line-content": "Автоэвакуация 24/7 * Быстрая дорожная помощь *",
+            "ads-line-content": "Эвакуация автомобилей 24/7 * Быстрая помощь на дороге *",
             "prices-title": "Цены и тарифы",
             "order-now-btn": "Заказать сейчас",
             "lei": "лей",
             "footer-partners-title": "Надежные партнеры",
             "contact-us-title": "Контакты",
-            "contact-us-article": "Для заказа любой из наших услуг звоните по телефону ниже или нажмите кнопку «Позвонить сейчас». Для получения информации или вопросов присоединяйтесь к нам в социальных сетях и мессенджерах. Для рекомендаций или жалоб обращайтесь по указанному телефону или электронной почте:",
-            "start-prices": "от"
+            "contact-us-article": "Для любых наших услуг вы можете позвонить по телефону, указанному ниже, или нажать кнопку „Позвонить сейчас“. Для получения информации или вопросов приглашаем вас присоединиться к нам в социальных сетях и мессенджерах. Для рекомендаций или жалоб обращайтесь по телефону или электронной почте, указанным ниже:",
+            "start-prices": "от",
+            "aditional-services-title": "Дополнительные услуги",
+            "choose-us-title": "Почему выбирают нас?",
+            "about-us-title": "Кто мы?",
+            "contact-us": "Связаться с нами",
+            "about-us-article-1": "С опытом более 7 лет в области эвакуации автомобилей и помощи на дороге, мы — надежный выбор для водителей Молдовы. Работаем круглосуточно, предоставляя быстрые и безопасные услуги как на территории нашей страны, так и в Яссах.",
+            "about-us-article-2": "Независимо от того, нужна ли вам эвакуация поврежденного автомобиля, специализированная транспортировка или экстренная помощь на дороге, наша команда профессионалов всегда готова вмешаться.",
+            "about-us-article-3": "Свяжитесь с нами для быстрого и эффективного решения, где бы вы ни находились!",
+            "choose-us-subtile": "У нас есть все, что нужно, чтобы вы чувствовали себя в безопасности на дороге. Быстрые услуги, прозрачные цены и команда, которая ответит на любой ваш вопрос!"
         }
     }
 }

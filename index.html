@@ -14,12 +14,13 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Alkatra:wght@400..700&family=Dancing+Script:wght@700&family=Imprima&family=Inter:wght@300;400;500&family=Montserrat:wght@400;500;600;800&family=Open+Sans&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Shantell+Sans:ital,wght@0,300..800;1,300..800&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Dancing+Script:wght@700&family=Imprima&family=Inter:wght@300;400;500&family=Montserrat:wght@400;500;600;800&family=Open+Sans&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Shantell+Sans:ital,wght@0,300..800;1,300..800&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./assets/styles/styles.css">
     <!-- <link rel="stylesheet" href="./assets/styles/addStyles.css"> -->
-    <!-- Swiper CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-
-    <!-- Swiper JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <title>Document</title>
 </head>
@@ -168,18 +169,21 @@
     </div>
 
     <section id="about-us" class="about-us">
-        <div class="about-us-left">
-            <h2 class="about-us-title title">Cine suntem noi?</h2>
-            <p class="about-us-article">Cu o experiență de peste 7 ani în domeniul tractărilor auto și evacuărilor,
+        <div class=" about-us-left">
+            <h2 data-i18n="about-us-title" class="about-us-title title">Cine suntem noi?</h2>
+            <p data-i18n="about-us-article-1" class="about-us-article">Cu o experiență de peste 7 ani în domeniul
+                tractărilor auto și evacuărilor,
                 suntem alegerea de încredere pentru șoferii din Republica Moldova. Operăm non-stop, oferind servicii
                 rapide și sigure atât pe întreg teritoriul tării noastre cît și în Iași.</p>
-            <p class="about-us-article">Cu Indiferent dacă ai nevoie de tractarea unei mașini avariate, transport
+            <p data-i18n="about-us-article-2" class="about-us-article">Cu Indiferent dacă ai nevoie de tractarea unei
+                mașini avariate, transport
                 auto specializat sau asistență rutieră de urgență, echipa noastră de profesioniști este mereu pregătită
                 să intervină. </p>
-            <p class="about-us-article">Contactează-ne pentru o soluție rapidă și eficientă, oriunde te-ai
+            <p data-i18n="about-us-article-3" class="about-us-article">Contactează-ne pentru o soluție rapidă și
+                eficientă, oriunde te-ai
                 afla!</p>
             <button class="contact-us-btn">
-                <a href="#">Contactează-ne</a>
+                <a data-i18n="contact-us" href="#">Contactează-ne</a>
             </button>
         </div>
         <div class="about-us-right">
@@ -187,57 +191,68 @@
         </div>
     </section>
 
+    <section id="choose-us">
+        <div class="container">
+            <h2 data-i18n="choose-us-title" class="choose-us-title title">De ce să ne alegi pe noi?</h2>
+            <p data-i18n="choose-us-subtile" class="choose-us-subtile">Avem tot ce îți trebuie pentru a te simți în
+                siguranță pe drum. Servicii rapide, prețuri transparente și o echipă dedicată care îți va răspunde la
+                orice întrebare!</p>
 
-    <section id="choose-us" class="choose-us">
-        <!-- card mockup -->
-        <div class="choose-us-card">
-            <div class="choose-us-title"></div>
-            <div class="choose-us-article"></div>
+            <div class="swiper choose-us">
+                <!-- Swiper container wrapper -->
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
         </div>
-
-        <button class="choose-us-prev">-</button>
-        <button class="choose-us-next">+</button>
     </section>
 
+
     <section id="contacts" class="contact-us">
-        <h2 data-i18n="contact-us-title" class="contact-us-title title">Contacte</h2>
-        <p data-i18n="contact-us-article" class="contact-us-article">Pentru oricare din serviciile noastre puteți
-            telefona la numarul de telefon de
-            mai jos sau tasta butonul „Sună acum”. Pentru informații sau întrebari vă invităm să vă alăturați nouă
-            în
-            rețele de socializare și mesengeruri. Pentru recomandări sau reclamații vă adresați la numarul de
-            telefon
-            sau poșta electronică de mai jos:</p>
-        <div class="contact-us-contacts">
-            <div class="contact-us-contact">
-                <img src="./assets/icons/call.svg" alt="Call">
-                <span>+373 79 41 21 12</span>
-            </div>
-            <div class="contact-us-contact">
-                <img src="./assets/icons/mail.svg" alt="Mail">
-                <a href="mailto:SpasAuto@gmail.com">
-                    <span>SpasAuto@gmail.com</span>
-                </a>
-            </div>
-            <div class="contact-us-contact">
-                <img src="./assets/icons/location.svg" alt="Location">
-                <span>Office: str. ..... nr. 15/2</span>
-            </div>
-        </div>
-        <div class="social-media">
-            <ul>
-                <li>
-                    <a target="_blank" href="https://www.facebook.com/profile.php?id=61553304617983">
-                        <img src="./assets/icons/facebook.svg" alt="Facebook">
+        <div class="container">
+            <h2 data-i18n="contact-us-title" class="contact-us-title title">Contacte</h2>
+            <p data-i18n="contact-us-article" class="contact-us-article">Pentru oricare din serviciile noastre
+                puteți
+                telefona la numarul de telefon de
+                mai jos sau tasta butonul „Sună acum”. Pentru informații sau întrebari vă invităm să vă alăturați
+                nouă
+                în
+                rețele de socializare și mesengeruri. Pentru recomandări sau reclamații vă adresați la numarul de
+                telefon
+                sau poșta electronică de mai jos:</p>
+            <div class="contact-us-contacts">
+                <div class="contact-us-contact">
+                    <img src="./assets/icons/call.svg" alt="Call">
+                    <span>+373 79 41 21 12</span>
+                </div>
+                <div class="contact-us-contact">
+                    <img src="./assets/icons/mail.svg" alt="Mail">
+                    <a href="mailto:SpasAuto@gmail.com">
+                        <span>SpasAuto@gmail.com</span>
                     </a>
-                </li>
-                <li>
-                    <a target="_blank" href="https://www.instagram.com/evacuator_balti_md">
-                        <img src="./assets/icons/instagram.svg" alt=" Instagram">
-                    </a>
-                </li>
-                <!-- <li><a href="#"><img src="./assets/icons/viber.svg" alt="Viber"></a></li> -->
-            </ul>
+                </div>
+                <div class="contact-us-contact">
+                    <img src="./assets/icons/location.svg" alt="Location">
+                    <span>Office: str. ..... nr. 15/2</span>
+                </div>
+            </div>
+            <div class="social-media">
+                <ul>
+                    <li>
+                        <a target="_blank" href="https://www.facebook.com/profile.php?id=61553304617983">
+                            <img src="./assets/icons/facebook.svg" alt="Facebook">
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.instagram.com/evacuator_balti_md">
+                            <img src="./assets/icons/instagram.svg" alt=" Instagram">
+                        </a>
+                    </li>
+                    <!-- <li><a href="#"><img src="./assets/icons/viber.svg" alt="Viber"></a></li> -->
+                </ul>
+            </div>
         </div>
     </section>
 
@@ -248,6 +263,11 @@
                     Parteneri de încredere
                 </p>
                 <div class="footer-partners-list">
+                    <div class="swiper-wrapper">
+                        <div class="swiper"><img src="./assets/images/partners/01.svg" alt="Slide 1"></div>
+                        <div class="swiper"><img src="./assets/images/partners/02.jpg" alt="Slide 2"></div>
+                        <div class="swiper"><img src="./assets/images/partners/03.svg" alt="Slide 4"></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -268,8 +288,9 @@
 
 
     <script src="https://unpkg.com/i18next@latest/dist/umd/i18next.min.js"></script>
-    <script src="scripts/script.js" type="module"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
+    <script src="./scripts/swiper-bundle.min.js"></script>
+    <script src="./scripts/script.js" type="module"></script>
 
 </body>
 

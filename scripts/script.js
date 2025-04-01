@@ -47,6 +47,10 @@ document.addEventListener("DOMContentLoaded", () => {
             el.textContent = i18next.t(el.getAttribute("data-i18n"));
         });
     }
+
+    if (window.innerWidth <= 1190.98) {
+        adaptiveMenu();
+    }
 });
 
 
@@ -69,9 +73,6 @@ function menuPaddingOnScroll() {
 }
 menuPaddingOnScroll();
 
-if (window.innerWidth <= 1190.98) {
-    adaptiveMenu();
-}
 
 const swiper = new Swiper(".ads-line", {
     loop: true, // Infinite loop
@@ -270,13 +271,9 @@ function generateChooseUsCards(whyChooseUs) {
     chooseUsList.innerHTML = "";
 
     whyChooseUs.chooseUs[curentLang].forEach((item) => {
-        // Создаём контейнер карточки
-        // const card = document.createElement("div");
-        // card.classList.add("choose-us-card");
         const swiperSlide = document.createElement("div");
         swiperSlide.classList.add('swiper-slide')
 
-        // Создаём элемент для заголовка
         const number = document.createElement("div");
         number.classList.add("params");
         number.textContent = item.id;
@@ -285,29 +282,39 @@ function generateChooseUsCards(whyChooseUs) {
         title.classList.add("choose-us-title");
         title.textContent = item.title;
 
-        // Добавляем заголовок в карточку
         swiperSlide.appendChild(number);
         swiperSlide.appendChild(title);
 
-
-        // Добавляем карточку в список
         chooseUsList.appendChild(swiperSlide);
     });
-    // chooseUsList.appendChild(swiperSlide);
 }
 
 
 const chooseUsSwiper = new Swiper(".choose-us", {
-    loop: true, // Infinite loop
-    autoplay: {
-        delay: 3000, // Auto-slide every 3 seconds
-        disableOnInteraction: false,
-    },
+    // loop: true, // Infinite loop
+    // autoplay: {
+    //     delay: 2000, // Auto-slide every 3 seconds
+    //     disableOnInteraction: false,
+    // },
     slidesPerView: 4, // Show 1 slide at a time
-    spaceBetween: 10, // Space between slides
-    navigation: {
-        nextEl: null,
-        prevEl: null,
+    spaceBetween: 70, // Space between slides
+    autoHeight: true,
+    // navigation: {
+    //     nextEl: null,
+    //     prevEl: null,
+    // },
+    breakpoints: {
+        992: {
+            slidesPerView: 4,
+        },
+        768: {
+            slidesPerView: 3,
+        },
+        576: {
+            slidesPerView: 2,
+        },
+        320: {
+            slidesPerView: 1,
+        },
     },
-
 });

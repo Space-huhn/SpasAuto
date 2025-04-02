@@ -613,7 +613,7 @@ header.on-scroll .logo {
 }
 
 .choose-us .swiper-slide {
-    /* height: 100%; */
+    height: 100%;
     border-left: 1px solid #000;
     display: flex;
     flex-direction: column;
@@ -621,10 +621,17 @@ header.on-scroll .logo {
     align-items: start;
     padding: 0 0 0 40px;
     width: 220px;
+    min-height: 100%;
+}
+
+.swiper.choose-us .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .choose-us-title {
-    flex: 1 0 auto !important;
+    margin-top: auto;
 }
 
 .choose-us .params {
@@ -766,20 +773,6 @@ footer a {
 @media (max-width: 1190.98px) {
     header .logo {
         height: 65px;
-    }
-
-    .hero-block {
-        /*flex-direction: column-reverse;*/
-    }
-
-    .hero-block-right,
-    .hero-block-left {
-        /*flex: 0 0 100%;*/
-    }
-
-    .hero-block-left {
-        /*align-self: flex-end;*/
-        /*width: 100%;*/
     }
 
     .header-nav {

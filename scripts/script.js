@@ -154,7 +154,7 @@ document.querySelectorAll(".header-nav-link").forEach(item => {
 function generateElementsFromData() {
     generatePriceCards(priceList);
     generateServiceCards(additionalServices);
-    generateChooseUsCards(chooseUs);
+    // generateChooseUsCards(chooseUs);
 }
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -265,40 +265,40 @@ function generateServiceCards(services) {
     });
 }
 
-function generateChooseUsCards(whyChooseUs) {
-    const chooseUsList = document.querySelector(".swiper.choose-us .swiper-wrapper");
+// function generateChooseUsCards(whyChooseUs) {
+//     const chooseUsList = document.querySelector(".swiper.choose-us .swiper-wrapper");
 
-    chooseUsList.innerHTML = "";
+//     chooseUsList.innerHTML = "";
 
-    whyChooseUs.chooseUs[curentLang].forEach((item) => {
-        const swiperSlide = document.createElement("div");
-        swiperSlide.classList.add('swiper-slide')
+//     whyChooseUs.chooseUs[curentLang].forEach((item) => {
+//         const swiperSlide = document.createElement("div");
+//         swiperSlide.classList.add('swiper-slide')
 
-        const number = document.createElement("div");
-        number.classList.add("params");
-        number.textContent = item.id;
+//         const number = document.createElement("div");
+//         number.classList.add("params");
+//         number.textContent = item.id;
 
-        const title = document.createElement("div");
-        title.classList.add("choose-us-title");
-        title.textContent = item.title;
+//         const title = document.createElement("div");
+//         title.classList.add("choose-us-title");
+//         title.textContent = item.title;
 
-        swiperSlide.appendChild(number);
-        swiperSlide.appendChild(title);
+//         swiperSlide.appendChild(number);
+//         swiperSlide.appendChild(title);
 
-        chooseUsList.appendChild(swiperSlide);
-    });
-}
+//         chooseUsList.appendChild(swiperSlide);
+//     });
+// }
 
 
 const chooseUsSwiper = new Swiper(".choose-us", {
     // loop: true, // Infinite loop
-    // autoplay: {
-    //     delay: 2000, // Auto-slide every 3 seconds
-    //     disableOnInteraction: false,
-    // },
+    autoplay: {
+        delay: 2000, // Auto-slide every 3 seconds
+        disableOnInteraction: false,
+    },
     slidesPerView: 4, // Show 1 slide at a time
     spaceBetween: 70, // Space between slides
-    // autoHeight: true,
+    // autoHeight: true,    
     // navigation: {
     //     nextEl: null,
     //     prevEl: null,

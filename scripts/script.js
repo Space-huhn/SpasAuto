@@ -154,7 +154,7 @@ document.querySelectorAll(".header-nav-link").forEach(item => {
 function generateElementsFromData() {
     generatePriceCards(priceList);
     generateServiceCards(additionalServices);
-    generateChooseUsCards(chooseUs);
+    // generateChooseUsCards(chooseUs);
 }
 
 document.addEventListener("DOMContentLoaded", () => {

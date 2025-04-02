@@ -17,25 +17,25 @@
                 "id": 3,
                 "img": "./assets/images/prices/03.jpg",
                 "title": "SUV, Pickup",
-                "start_price": "450"
+                "start_price": "400"
             },
             {
                 "id": 4,
                 "img": "./assets/images/prices/04.jpg",
                 "title": "Minibus",
-                "start_price": "450"
+                "start_price": "400"
             },
             {
                 "id": 5,
                 "img": "./assets/images/prices/05.jpg",
                 "title": "Utilaj special",
-                "start_price": "450"
+                "start_price": "400"
             },
             {
                 "id": 6,
                 "img": "./assets/images/prices/06.jpg",
                 "title": "Cazuri particulare",
-                "start_price": "500"
+                "start_price": "400"
             }
         ],
         "ru": [
@@ -55,25 +55,25 @@
                 "id": 3,
                 "img": "./assets/images/prices/03.jpg",
                 "title": "Внедорожник, Пикап",
-                "start_price": "450"
+                "start_price": "400"
             },
             {
                 "id": 4,
                 "img": "./assets/images/prices/04.jpg",
                 "title": "Микроавтобус",
-                "start_price": "450"
+                "start_price": "400"
             },
             {
                 "id": 5,
                 "img": "./assets/images/prices/05.jpg",
                 "title": "Спецтехника",
-                "start_price": "450"
+                "start_price": "400"
             },
             {
                 "id": 6,
                 "img": "./assets/images/prices/06.jpg",
                 "title": "Частные случаи",
-                "start_price": "500"
+                "start_price": "400"
             }
         ]
     }

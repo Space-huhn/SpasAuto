@@ -191,7 +191,7 @@ header.scroll .header-bottom-columns {
     }
 }
 
-@media (max-width: 1190.98px) {
+@media (max-width: 1200px) {
     header .logo {
         height: 65px;
     }
@@ -289,10 +289,10 @@ header.scroll .header-bottom-columns {
     } */
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 768px) {
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 600px) {
     .footer-navigation {
         flex-direction: column-reverse;
         gap: 20px;

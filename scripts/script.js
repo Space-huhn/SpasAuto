@@ -21,7 +21,7 @@ window.addEventListener("scroll", scrollFromTop);
 
 function adaptiveMenu() {
 
-    if (window.innerWidth <= 1190.98) {
+    if (window.innerWidth <= 1200) {
         headerNav.appendChild(headerTop);
     } else {
         header.prepend(headerTop);
@@ -54,7 +54,7 @@ function toggleMenu() {
 burgerMenu.addEventListener("click", toggleMenu);
 
 function linkClickHandler() {
-    if (window.innerWidth >= 1190.98) return;
+    if (window.innerWidth >= 1200) return;
 
     headerNav.addEventListener("click", (event) => {
         if (event.target.classList.contains("header-nav-link")) {

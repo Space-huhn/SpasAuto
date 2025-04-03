@@ -94,7 +94,6 @@
 /*---------------------------------------------------------*/
 
 
-
 .hero-mobile {
     display: flex;
     flex-direction: column;
@@ -156,11 +155,14 @@
     }
 }
 
-@media (max-width: 1190.98px) {}
+@media (max-width: 1200px) {
+}
 
-@media (max-width: 767.98px) {}
+@media (max-width: 768px) {
+}
 
-@media (max-width: 575.98px) {}
+@media (max-width: 600px) {
+}
 
 /*
 @media (max-width: 1190.98px) {

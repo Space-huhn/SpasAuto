@@ -1,8 +1,11 @@
 import {generateElementsFromData} from './generateFromMockup.js'
 
 const burgerMenu = document.querySelector(".header-burger");
-const headerMenu = document.querySelector(".header-nav");
 const body = document.querySelector("body");
+const header = document.querySelector("header");
+const headerTop = document.querySelector(".header-top");
+const headerNav = document.querySelector(".header-nav");
+
 
 function scrollFromTop() {
     const header = document.querySelector("header");
@@ -17,9 +20,6 @@ scrollFromTop();
 window.addEventListener("scroll", scrollFromTop);
 
 function adaptiveMenu() {
-    const header = document.querySelector("header");
-    const headerTop = document.querySelector(".header-top");
-    const headerNav = document.querySelector(".header-nav");
 
     if (window.innerWidth <= 1190.98) {
         headerNav.appendChild(headerTop);
@@ -33,13 +33,13 @@ window.addEventListener("resize", adaptiveMenu);
 
 function openMenu() {
     burgerMenu.classList.add("active")
-    headerMenu.classList.add("active")
+    headerNav.classList.add("active")
     body.classList.add("scroll-look")
 }
 
 function closeMenu() {
     burgerMenu.classList.remove("active")
-    headerMenu.classList.remove("active")
+    headerNav.classList.remove("active")
     body.classList.remove("scroll-look")
 }
 
@@ -56,7 +56,7 @@ burgerMenu.addEventListener("click", toggleMenu);
 function linkClickHandler() {
     if (window.innerWidth >= 1190.98) return;
 
-    headerMenu.addEventListener("click", (event) => {
+    headerNav.addEventListener("click", (event) => {
         if (event.target.classList.contains("header-nav-link")) {
             toggleMenu();
         }

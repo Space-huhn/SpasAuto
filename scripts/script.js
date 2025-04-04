@@ -20,10 +20,9 @@ scrollFromTop();
 window.addEventListener("scroll", scrollFromTop);
 
 function adaptiveMenu() {
-
-    if (window.innerWidth <= 1200) {
+    if (window.innerWidth <= 1200 && !headerNav.contains(headerTop)) {
         headerNav.appendChild(headerTop);
-    } else {
+    } else if (window.innerWidth > 1200 && !header.firstElementChild.isSameNode(headerTop)) {
         header.prepend(headerTop);
     }
 }

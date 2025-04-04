@@ -1,6 +1,10 @@
+.contact-us {
+    overflow: hidden;
+}
+
 .contact-us-contacts {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     margin: 125px;
     flex-wrap: wrap;
@@ -39,13 +43,6 @@
     justify-content: center;
     align-items: center;
     transform: scale(1.5);
-}
-
-.contact-us-contacts {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    flex-wrap: wrap;
 }
 
 .social-media ul {

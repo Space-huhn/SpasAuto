@@ -29,7 +29,7 @@
     text-align: right;
     color: #ff0a0a;
     font-family: Alkatra, serif;
-    /*font-size: clamp(4rem, 4vw, 6rem);*/
+    font-size: clamp(4rem, 4vw, 6rem);
 }
 
 .hero-block span {
@@ -68,7 +68,7 @@
     font-weight: 700;
     text-align: right;
     color: #4a90e2;
-    /*font-size: clamp(4rem, 4vw, 6rem);*/
+    font-size: clamp(4rem, 4vw, 6rem);
 }
 
 .hero-article {
@@ -76,7 +76,7 @@
     text-align: right;
     color: #000;
     max-width: 550px;
-    /*font-size: clamp(1rem, 1.5vw, 2rem);*/
+    font-size: clamp(1rem, 1.5vw, 2rem);
 }
 
 /*---------------------------------------------------------*/

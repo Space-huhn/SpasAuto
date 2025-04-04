@@ -100,7 +100,8 @@
     padding: 20px;
     border-radius: 9px;
     max-width: 80%;
-    margin-bottom: 20%;
+    margin-bottom: 10svh;
+    gap: 5svh;
 }
 
 .hero-mobile .hero-title {
@@ -117,6 +118,7 @@
     align-self: end;
     text-shadow: 1px 3px 10px rgba(74, 144, 226, 0.4);
     font-size: clamp(5rem, 2.5vw, 15rem);
+    line-height: 100%;
 }
 
 .hero-mobile button {
@@ -125,14 +127,13 @@
     color: #fff;
     padding: 10px 30px;
     border-radius: 9px;
-    margin-top: 2rem;
     font-size: 20px;
 }
 
 /*---------------------------------------------------------*/
-@media (max-aspect-ratio: 16/12) {
+@media (max-aspect-ratio: 16/9) {
     .hero-block-right {
-        margin-bottom: -45rem;
+        margin-bottom: -35rem;
     }
 }
 

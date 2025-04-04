@@ -59,7 +59,7 @@ function linkClickHandler() {
         if (event.target.classList.contains("header-nav-link")) {
             toggleMenu();
         }
-    }, {once: true});
+    });
 }
 
 linkClickHandler()

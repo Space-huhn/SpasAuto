@@ -25,7 +25,6 @@ const swiper = new Swiper(".ads-line", {
 // });
 
 const chooseUsSwiper = new Swiper(".choose-us", {
-    // loop: true, // Infinite loop
     autoplay: {
         delay: 2000, // Auto-slide every 3 seconds
         disableOnInteraction: false,

@@ -13,6 +13,10 @@
     <link href="./assets/styles/header.css" rel="stylesheet">
     <link href="./assets/styles/hero.css" rel="stylesheet">
     <link href="./assets/styles/prices.css" rel="stylesheet">
+    <link href="./assets/styles/about-us.css" rel="stylesheet">
+    <link href="./assets/styles/choose-us.css" rel="stylesheet">
+    <link href="./assets/styles/contact-us.css" rel="stylesheet">
+    <link href="./assets/styles/footer.css" rel="stylesheet">
 
 
     <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet">
@@ -206,7 +210,6 @@
     </h2>
     <div class="additional-services-row"></div>
     <!-- card mockup -->
-
 </div>
 
 <section class="about-us" id="about-us">
@@ -296,10 +299,10 @@
                 </a>
             </div>
             <div class="contact-us-contact">
-                <img alt="Location" src="./assets/icons/location.svg">
-                <span>Office: Balți</span>
-                <a href="https://g.co/kgs/NtBB2bD">Pune notă</a>
-
+                <img alt="Location" src="./assets/icons/star-rating.svg">
+                <span>
+                    <a data-i18n="rating" href="https://g.co/kgs/NtBB2bD">Pune o notă -></a>
+                </span>
             </div>
         </div>
         <div class="social-media">
@@ -314,41 +317,50 @@
                         <img alt=" Instagram" src="./assets/icons/instagram.svg">
                     </a>
                 </li>
-                <!-- <li><a href="#"><img src="./assets/icons/viber.svg" alt="Viber"></a></li> -->
+                <li>
+                    <a href="https://api.whatsapp.com/send?phone=37379412112" target="_blank">
+                        <img alt="Whatsapp" src="./assets/icons/whatsapp.svg">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://t.me/+37379412112" target="_blank">
+                        <img alt="Telegram" src="./assets/icons/telegram.svg">
+                    </a>
+                </li>
             </ul>
         </div>
     </div>
 </section>
 
-<!--    <footer>-->
-<!--        <div class="footer-partners">-->
-<!--            <div class="container">-->
-<!--                <p data-i18n="footer-partners-title" class="footer-partners-title title">-->
-<!--                    Parteneri de încredere-->
-<!--                </p>-->
-<!--                <div class="footer-partners-list">-->
-<!--                    <div class="swiper-wrapper">-->
-<!--                        <div class="swiper"><img src="./assets/images/partners/01.svg" alt="Slide 1"></div>-->
-<!--                        <div class="swiper"><img src="./assets/images/partners/02.jpg" alt="Slide 2"></div>-->
-<!--                        <div class="swiper"><img src="./assets/images/partners/03.svg" alt="Slide 4"></div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--        <div class="container">-->
-<!--            <div class="footer-navigation">-->
-<!--                <span class="copyrights">@2025 SpasAuto. All Right Reserved.</span>-->
-<!--                <nav>-->
-<!--                    <ul>-->
-<!--                        <li><a data-i18n="menu-home" href="#home">Acasă</a></li>-->
-<!--                        <li><a data-i18n="menu-prices" href="#prices">Prețuri</a></li>-->
-<!--                        <li><a data-i18n="menu-about" href="#about">Despre noi</a></li>-->
-<!--                        <li><a data-i18n="menu-contacts" href="#contacts">Contacte</a></li>-->
-<!--                    </ul>-->
-<!--                </nav>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </footer>-->
+<footer>
+    <div class="footer-partners">
+        <div class="container">
+            <p class="footer-partners-title title" data-i18n="footer-partners-title">
+                Parteneri de încredere
+            </p>
+            <div class="footer-partners-list">
+                <div class="swiper-wrapper">
+                    <div class="swiper"><img alt="Slide 1" src="./assets/images/partners/01.svg"></div>
+                    <div class="swiper"><img alt="Slide 2" src="./assets/images/partners/02.jpg"></div>
+                    <div class="swiper"><img alt="Slide 4" src="./assets/images/partners/03.svg"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="footer-navigation">
+            <span class="copyrights">@2025 SpasAuto. All Right Reserved.</span>
+            <nav>
+                <ul>
+                    <li><a data-i18n="menu-home" href="#home">Acasă</a></li>
+                    <li><a data-i18n="menu-prices" href="#prices">Prețuri</a></li>
+                    <li><a data-i18n="menu-about" href="#about">Despre noi</a></li>
+                    <li><a data-i18n="menu-contacts" href="#contacts">Contacte</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</footer>
 
 
 <script src="https://unpkg.com/i18next@latest/dist/umd/i18next.min.js"></script>
@@ -357,8 +369,5 @@
 <script src="./scripts/createSwipers.js" type="module"></script>
 <script src="./scripts/generateFromMockup.js" type="module"></script>
 <script src="./scripts/translateFunctions.js" type="module"></script>
-
-
 </body>
-
 </html>

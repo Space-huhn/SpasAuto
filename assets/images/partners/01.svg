@@ -1,17 +1,22 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 240 240" fill="none" class="logo_svg color-invertion">
-						<g clip-path="url(#clip0_64_2)">
-							<rect x="5.45312" y="88.59" width="28.6397" height="28.6397" transform="rotate(-45 5.45312 88.59)" fill="black"></rect>
-							<rect x="68.3384" y="213.296" width="28.6397" height="28.6397" transform="rotate(-45 68.3384 213.296)" fill="black"></rect>
-							<rect x="130.158" y="25.7044" width="28.6397" height="28.6397" transform="rotate(-45 130.158 25.7044)" fill="black"></rect>
-							<rect x="36.3628" y="119.5" width="28.6397" height="117.574" transform="rotate(-45 36.3628 119.5)" fill="black"></rect>
-							<rect x="99.7007" y="182.432" width="74" height="28" transform="rotate(-45 99.7007 182.432)" fill="black"></rect>
-							<rect x="233.547" y="150.41" width="28.6397" height="28.6397" transform="rotate(135 233.547 150.41)" fill="black"></rect>
-							<rect x="202.637" y="119.5" width="28.6397" height="117.574" transform="rotate(135 202.637 119.5)" fill="black"></rect>
-							<rect x="139.299" y="56.5675" width="74" height="28" transform="rotate(135 139.299 56.5675)" fill="black"></rect>
-						</g>
-						<defs>
-							<clipPath id="clip0_64_2">
-								<rect width="240" height="240" fill="white"></rect>
-							</clipPath>
-						</defs>
-					</svg>
+<svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_186_13)">
+<mask id="mask0_186_13" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="70" height="70">
+<path d="M70 0H0V70H70V0Z" fill="white"/>
+</mask>
+<g mask="url(#mask0_186_13)">
+<path d="M7.49721 19.9317L1.59058 25.8384L7.49721 31.745L13.4038 25.8384L7.49721 19.9317Z" fill="white"/>
+<path d="M25.8388 56.3048L19.9321 62.2114L25.8388 68.1181L31.7454 62.2114L25.8388 56.3048Z" fill="white"/>
+<path d="M43.8695 1.59044L37.9629 7.49707L43.8695 13.4037L49.7762 7.49707L43.8695 1.59044Z" fill="white"/>
+<path d="M16.5126 28.9474L10.606 34.854L34.8544 59.1024L40.761 53.1958L16.5126 28.9474Z" fill="white"/>
+<path d="M44.3411 37.9473L29.0793 53.209L34.8541 58.9837L50.1158 43.722L44.3411 37.9473Z" fill="white"/>
+<path d="M62.2113 49.7763L68.1179 43.8696L62.2113 37.963L56.3046 43.8696L62.2113 49.7763Z" fill="white"/>
+<path d="M53.1959 40.7606L59.1025 34.854L34.8541 10.6056L28.9475 16.5122L53.1959 40.7606Z" fill="white"/>
+<path d="M25.3672 31.7603L40.6289 16.4985L34.8542 10.7238L19.5925 25.9856L25.3672 31.7603Z" fill="white"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_186_13">
+<rect width="70" height="70" fill="white"/>
+</clipPath>
+</defs>
+</svg>

@@ -1,6 +1,6 @@
-import additionalServices from "../data/additionalServices.json" with { type: "json" };
-import chooseUs from "../data/chooseUs.json" with { type: "json" };
-import priceList from "../data/priceList.json" with { type: "json" };
+import additionalServices from "../data/additionalServices.json" with {type: "json"};
+import chooseUs from "../data/chooseUs.json" with {type: "json"};
+import priceList from "../data/priceList.json" with {type: "json"};
 import {currentLang} from "./translateFunctions.js";
 
 
@@ -114,7 +114,7 @@ function generateServiceCards(services) {
 }
 
 function generateChooseUsCards(whyChooseUs) {
-    const chooseUsList = document.querySelector(".swiper.choose-us .swiper-wrapper");
+    const chooseUsList = document.querySelector(".swiper.choose-us.css .swiper-wrapper");
 
     chooseUsList.innerHTML = "";
 
@@ -127,7 +127,7 @@ function generateChooseUsCards(whyChooseUs) {
         number.textContent = item.id;
 
         const title = document.createElement("div");
-        title.classList.add("choose-us-title");
+        title.classList.add("choose-us.css-title");
         title.textContent = item.title;
 
         swiperSlide.appendChild(number);

@@ -8,7 +8,7 @@
 
 .hero-block-right {
     flex: 1 1 40vw;
-    margin-left: -20rem;
+    margin-left: -15rem;
 }
 
 .hero-block-left {
@@ -29,7 +29,7 @@
     text-align: right;
     color: #ff0a0a;
     font-family: Alkatra, serif;
-    font-size: clamp(5rem, 6vw, 12rem);
+    /*font-size: clamp(4rem, 4vw, 6rem);*/
 }
 
 .hero-block span {
@@ -43,12 +43,13 @@
     align-items: flex-end;
     justify-self: flex-end;
     max-width: 850px;
-    margin-top: 18rem;
+    margin-top: 16rem;
     margin-right: 30px;
     padding: 2rem;
     border-radius: 25px;
     background: rgba(255, 255, 255, 0.4);
     box-shadow: 4px 4px 35px rgba(34, 60, 80, 0.2);
+    gap: 1svh;
 }
 
 .text-content button {
@@ -67,16 +68,15 @@
     font-weight: 700;
     text-align: right;
     color: #4a90e2;
-    font-size: clamp(4rem, 6vw, 6rem);
+    /*font-size: clamp(4rem, 4vw, 6rem);*/
 }
 
 .hero-article {
     font-weight: 700;
-    /*font-size: 24px;*/
     text-align: right;
     color: #000;
     max-width: 550px;
-    font-size: clamp(1rem, 2.4vw, 2rem);
+    /*font-size: clamp(1rem, 1.5vw, 2rem);*/
 }
 
 /*---------------------------------------------------------*/
@@ -131,9 +131,17 @@
 }
 
 /*---------------------------------------------------------*/
-@media (max-aspect-ratio: 16/9) {
-    .hero-block-right {
-        margin-bottom: -35rem;
+/* Narrow or portrait */
+@media (max-aspect-ratio: 4/3) {
+    .text-content {
+        margin-top: 20rem;
+    }
+}
+
+/* Wide / landscape */
+@media (min-aspect-ratio: 16/9) {
+    .text-content {
+        margin-top: 12rem;
     }
 }
 
@@ -152,10 +160,6 @@
     }
 
     .hero-block {
-        height: 100svh;
-        width: 100vw;
-        display: flex;
-        overflow: hidden;
         flex-direction: column-reverse;
     }
 

@@ -42,7 +42,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: scale(1.5);
+    /*transform: scale(1.5);*/
 }
 
 .social-media ul {

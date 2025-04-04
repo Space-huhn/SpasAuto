@@ -189,6 +189,15 @@ header.scroll .header-bottom-columns {
     header .logo {
         height: 80px;
     }
+
+    .header-top-columns,
+    .header-bottom-columns {
+        font-size: 20px;
+    }
+
+    .header-top-columns img {
+        width: 30px;
+    }
 }
 
 @media (max-width: 1200px) {

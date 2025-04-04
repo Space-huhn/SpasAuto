@@ -206,7 +206,7 @@ header.scroll .header-bottom-columns {
     }
 
     .header-nav {
-        min-height: 100vh;
+        min-height: 100svh;
         height: 100%;
         min-width: 100vw;
         color: #fff !important;

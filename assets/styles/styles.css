@@ -21,7 +21,7 @@ body {
     overflow-x: hidden;
 }
 
-body.scroll-look {
+html body.scroll-look {
     overflow: hidden;
 }
 

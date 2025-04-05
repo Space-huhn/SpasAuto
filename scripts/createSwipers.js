@@ -9,6 +9,11 @@ const swiper = new Swiper(".ads-line", {
     spaceBetween: 1, // Space between slides
     freeMode: true, // Allows continuous movement
     freeModeMomentum: false,
+    768: {
+        slidesPerView: 1,
+        spaceBetween: 500,
+    },
+
 });
 
 // const swiperPartners = new Swiper(".footer-partners-list", {

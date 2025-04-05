@@ -42,7 +42,6 @@ section {
     background: url("../images/ads-line-bg.jpg");
     height: 80px;
     font-weight: 700;
-    /*font-size: 36px;*/
     color: #fff;
     text-shadow: 2px 6px 4px rgba(0, 0, 0, 0.3);
     display: flex;
@@ -50,13 +49,14 @@ section {
     overflow: hidden;
     font-size: clamp(1rem, 2.5vw, 3rem);
     transition-timing-function: linear;
-
 }
 
 .ads-line .swiper-slide {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-wrap: nowrap;
+    margin: 0 100px;
 }
 
 /*-----------------------------------------------*/
@@ -88,12 +88,21 @@ section {
 }
 
 @media (max-width: 1200px) {
+    .ads-line {
+        height: 60px;
+    }
 }
 
 @media (max-width: 768px) {
+    .ads-line {
+        height: 40px;
+    }
 }
 
 @media (max-width: 600px) {
+    .ads-line {
+        height: 20px;
+    }
 }
 
 @media (max-width: 490px) {

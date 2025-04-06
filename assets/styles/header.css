@@ -113,13 +113,28 @@ nav a {
 .header-nav-list {
     display: flex;
     align-items: center;
-    gap: 38px;
+    gap: 28px;
+}
+
+.header-nav-list a {
+    display: inline-block;
+    padding: 10px 35px;
+    width: 100%;
+    text-align: center;
+}
+
+.header-nav-list-item {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .header-nav__language {
     position: relative;
     cursor: pointer;
     font-weight: 500;
+    padding: 10px 35px;
 }
 
 .language__default {
@@ -262,8 +277,7 @@ header.scroll .header-bottom-columns {
     }
 }
 
-@media (max-width: 768px) {
-}
+@media (max-width: 768px) {}
 
 @media (max-width: 600px) {
     .footer-navigation {

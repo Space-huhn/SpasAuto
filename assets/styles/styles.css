@@ -21,7 +21,8 @@ body {
     overflow-x: hidden;
 }
 
-html body.scroll-look {
+body.scroll-look,
+html.scroll-look {
     overflow: hidden;
 }
 
@@ -105,5 +106,4 @@ section {
     }
 }
 
-@media (max-width: 490px) {
-}
+@media (max-width: 490px) {}

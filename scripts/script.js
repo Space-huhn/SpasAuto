@@ -1,6 +1,7 @@
-import {generateElementsFromData} from './generateFromMockup.js'
+import { generateElementsFromData } from './generateFromMockup.js'
 
 const burgerMenu = document.querySelector(".header-burger");
+const html = document.querySelector("html");
 const body = document.querySelector("body");
 const header = document.querySelector("header");
 const headerTop = document.querySelector(".header-top");
@@ -34,12 +35,14 @@ function openMenu() {
     burgerMenu.classList.add("active")
     headerNav.classList.add("active")
     body.classList.add("scroll-look")
+    html.classList.add("scroll-look")
 }
 
 function closeMenu() {
     burgerMenu.classList.remove("active")
     headerNav.classList.remove("active")
     body.classList.remove("scroll-look")
+    html.classList.remove("scroll-look")
 }
 
 function toggleMenu() {

@@ -31,40 +31,39 @@ function adaptiveMenu() {
 adaptiveMenu();
 window.addEventListener("resize", adaptiveMenu);
 
-function openMenu() {
-    burgerMenu.classList.add("active")
-    headerNav.classList.add("active")
-    body.classList.add("scroll-look")
-    html.classList.add("scroll-look")
-}
-
-function closeMenu() {
-    burgerMenu.classList.remove("active")
-    headerNav.classList.remove("active")
-    body.classList.remove("scroll-look")
-    html.classList.remove("scroll-look")
-}
-
 function toggleMenu() {
-    if (burgerMenu.classList.contains("active")) {
-        closeMenu();
-    } else {
-        openMenu();
-    }
+    const isActive = burgerMenu.classList.toggle("active");
+
+    headerNav.classList.toggle("active", isActive);
+    body.classList.toggle("scroll-look", isActive);
+    html.classList.toggle("scroll-look", isActive);
 }
 
-burgerMenu.addEventListener("click", toggleMenu);
+burgerMenu.addEventListener("click", (e) => {
+    toggleMenu();
+});
 
-function linkClickHandler() {
+function linkClickHandler(e) {
     if (window.innerWidth >= 1200) return;
+    if (e.target.classList.contains("header-nav-link")) {
+        toggleMenu();
+    }
+};
 
-    headerNav.addEventListener("click", (event) => {
-        if (event.target.classList.contains("header-nav-link")) {
-            toggleMenu();
-        }
-    });
-}
-
-linkClickHandler()
+headerNav.addEventListener("click", (e) => linkClickHandler(e))
 
 document.addEventListener("DOMContentLoaded", generateElementsFromData);
+
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+    link.addEventListener("click", e => {
+        const href = link.getAttribute("href");
+        const target = document.querySelector(href);
+
+        if (target) {
+            e.preventDefault();
+            e.stopPropagation();
+            target.scrollIntoView({ behavior: "smooth" });
+            toggleMenu()
+        }
+    });
+});

@@ -130,6 +130,13 @@
     font-size: 20px;
 }
 
+.hero-block-mobile .phone-number {
+    font-size: clamp(3rem, 4vw, 4rem);
+    padding: 12px 0;
+    color: #fff;
+    font-weight: 600;
+}
+
 /*---------------------------------------------------------*/
 /* Narrow or portrait */
 @media (max-aspect-ratio: 4/3) {
@@ -222,6 +229,9 @@
 }
 
 @media (max-width: 600px) {
+    .hero-blocka-mobile .phone-number {
+        font-size: clamp(3rem, 4vw, 4rem);
+    }
 }
 
 @media (max-width: 490px) {
@@ -233,5 +243,8 @@
         font-size: clamp(3rem, 2.5vw, 8rem);
         text-align: right;
     }
-}
 
+    .hero-block-mobile .phone-number {
+        font-size: clamp(2rem, 4vw, 3rem);
+    }
+}

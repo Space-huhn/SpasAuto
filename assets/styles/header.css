@@ -157,6 +157,8 @@ nav a {
     padding: 12px 8px;
     border-radius: 8px;
     margin: 5px 0 0 30px;
+    bottom: -70px;
+    right: 10px;
 }
 
 .header-nav__language.active ul {

@@ -63,7 +63,12 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
             e.preventDefault();
             e.stopPropagation();
             target.scrollIntoView({ behavior: "smooth" });
-            toggleMenu()
+            // toggleMenu()
+
+            burgerMenu.classList.remove("active");
+            headerNav.classList.remove("active");
+            body.classList.remove("scroll-look");
+            html.classList.remove("scroll-look");
         }
     });
 });

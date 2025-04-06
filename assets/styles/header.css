@@ -126,6 +126,7 @@ nav a {
 
 .header-nav-list-item {
     width: 100%;
+    text-align: center;
     /* display: flex; */
     /* justify-content: center; */
     /* align-items: center; */

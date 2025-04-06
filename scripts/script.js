@@ -7,7 +7,6 @@ const header = document.querySelector("header");
 const headerTop = document.querySelector(".header-top");
 const headerNav = document.querySelector(".header-nav");
 
-
 function scrollFromTop() {
     const header = document.querySelector("header");
     if (window.scrollY >= 100) {

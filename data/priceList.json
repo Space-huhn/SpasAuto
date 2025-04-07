@@ -23,13 +23,13 @@
                 "id": 4,
                 "img": "./assets/images/prices/04.jpg",
                 "title": "Minibus",
-                "start_price": "400"
+                "start_price": "450"
             },
             {
                 "id": 5,
                 "img": "./assets/images/prices/05.jpg",
                 "title": "Utilaj special",
-                "start_price": "400"
+                "start_price": "500"
             },
             {
                 "id": 6,
@@ -61,13 +61,13 @@
                 "id": 4,
                 "img": "./assets/images/prices/04.jpg",
                 "title": "Микроавтобус",
-                "start_price": "400"
+                "start_price": "450"
             },
             {
                 "id": 5,
                 "img": "./assets/images/prices/05.jpg",
                 "title": "Спецтехника",
-                "start_price": "400"
+                "start_price": "500"
             },
             {
                 "id": 6,

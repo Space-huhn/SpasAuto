@@ -109,7 +109,7 @@
     letter-spacing: 0;
     color: #fff;
     text-shadow: 1px 3px 10px rgba(74, 144, 226, 0.4);
-    font-size: clamp(5rem, 2.5vw, 15rem);
+    font-size: clamp(4rem, 2vw, 8rem);
     text-align: right;
 }
 
@@ -133,8 +133,9 @@
 .hero-block-mobile .phone-number {
     font-size: clamp(3rem, 4vw, 4rem);
     padding: 12px 0;
-    color: #fff;
+    /* color: #fff; */
     font-weight: 600;
+    color: red;
 }
 
 /*---------------------------------------------------------*/

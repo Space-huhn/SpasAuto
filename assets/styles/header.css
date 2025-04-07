@@ -207,6 +207,12 @@ header.scroll .header-bottom-columns {
     padding: 8px 0;
 }
 
+.header-bottom .phone-number {
+    color: #fff;
+    font-size: 28px;
+    display: none;
+}
+
 /* ------------------------------------------ */
 
 @media (max-width: 1440px) {
@@ -284,6 +290,11 @@ header.scroll .header-bottom-columns {
         border-radius: 8px;
         margin: 5px 0 0 30px;
     }
+
+    .header-bottom .phone-number {
+        display: block;
+    }
+
 }
 
 @media (max-width: 768px) {}

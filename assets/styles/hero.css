@@ -133,9 +133,8 @@
 .hero-block-mobile .phone-number {
     font-size: clamp(3rem, 4vw, 4rem);
     padding: 12px 0;
-    /* color: #fff; */
+    color: #fff;
     font-weight: 600;
-    color: red;
 }
 
 /*---------------------------------------------------------*/

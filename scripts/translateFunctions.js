@@ -1,4 +1,5 @@
-import {generateElementsFromData} from "./generateFromMockup.js";
+import { generateElementsFromData } from "./generateFromMockup.js";
+import { setMetaTags } from "./script.js"
 
 let autoLang = ["ro", "ru"].includes(navigator.language.slice(0, 2))
     ? navigator.language.slice(0, 2)
@@ -22,6 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
 function updateContent() {
     //regenerate elements using another language
     generateElementsFromData();
+    setMetaTags();
 
     document.getElementById("language__default").innerText = currentLang;
 
@@ -51,5 +53,4 @@ function openLanguageDropDown() {
 
 openLanguageDropDown()
 
-
-export {currentLang, autoLang};
+export { currentLang, autoLang };

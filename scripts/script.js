@@ -1,4 +1,6 @@
 import { generateElementsFromData } from './generateFromMockup.js'
+import { currentLang } from "./translateFunctions.js";
+// import dictionary from "../dictionary/translations.json" assert { type: 'json' };
 
 const burgerMenu = document.querySelector(".header-burger");
 const html = document.querySelector("html");
@@ -6,6 +8,7 @@ const body = document.querySelector("body");
 const header = document.querySelector("header");
 const headerTop = document.querySelector(".header-top");
 const headerNav = document.querySelector(".header-nav");
+const head = document.querySelector("head");
 
 function scrollFromTop() {
     const header = document.querySelector("header");
@@ -71,3 +74,22 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
         }
     });
 });
+
+
+function setMetaTags() {
+    fetch('../dictionary/translations.json')
+        .then((response) => response.json())
+        .then((data) => {
+            head.querySelector('meta[name="description"]').setAttribute("content", data[currentLang].translation.meta.description);
+            head.querySelector('meta[name="keywords"]').setAttribute("content", data[currentLang].translation.meta.keywords);
+            head.querySelector('meta[name="title"]').setAttribute("content", data[currentLang].translation.meta.title);
+        })
+        .catch((error) => {
+            console.error('Error Fetching JSON File:', error);
+        });
+}
+
+document.addEventListener("DOMContentLoaded", setMetaTags())
+
+
+export { setMetaTags };
